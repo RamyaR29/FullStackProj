@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact.html</title>
+    <link rel="stylesheet" type="text/css" href="Style/cform.css">
+</head>
+<body id="home">
+    <header>
+        <nav>
+            <h1>GOKULRAJ JAYAKUMAR</h1>
+            <div class="topnav-right">
+                <a href="HomePage.html" class="active">HOME</a>
+                <a href="http://gokulrajjayakumar.uta.cloud/Jayakumar_portfolio/Skill.php">MY SKILLS</a>
+                <a href="recommendation.html">RECOMMENDATION</a>
+                <a href="http://gokulrajjayakumar.uta.cloud/Jayakumar_portfolio/works.php">WORKS</a>
+                <a href="http://gokulrajjayakumar.uta.cloud/GokuBlog/">BLOG</a>
+                <a href="http://gokulrajjayakumar.uta.cloud/Jayakumar_portfolio/hireme.php">HIRE ME</a>
+                <a href="SignUp.html">SIGN UP</a>
+            </div>
+        </nav>
+    </header>
+    <br><br><br><br><br><br><br>
+    <h2 style="text-align:center;">HAVE A PROJECT YOU WOULD LIKE TO DISCUSS?</h2>
+
+    <button class="button-login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">DISCUSS</button>
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="http://gokulrajjayakumar.uta.cloud/Jayakumar_portfolio/contact.php mailto:gokulraj.jayakumar@mavs.uta.edu" method="post">
+
+            <div class="container" style="text-align:left;">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+				
+				<label for="sub"><b>Subject</b></label>
+                <input type="text" placeholder="Enter subject" name="subject" required>
+
+                <label for="msg"><b>Message</b></label>
+                <input type="text" placeholder="Enter Message" name="msg" required>
+
+                <button type="submit" name="save" onclick="javascript:alert('Successfully email sent !')">Submit</button>
+               
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+
+    <script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+    </script>
+
+    <br><BR><BR><br><BR><BR><br><BR><BR><br><BR><BR><br><BR><BR><br><BR><BR><br><BR><BR><BR><br><BR><BR><br><BR><br><BR><BR><br><BR>
+    <footer>
+        <nav>
+
+            <div class="topnav-right">
+                <a href="HomePage.html" class="active">HOME</a>
+                <a href="http://gokulrajjayakumar.uta.cloud/Jayakumar_portfolio/Skill.php">MY SKILLS</a>
+                <a href="recommendation.html">RECOMMENDATION</a>
+                <a href="customers.html">CUSTOMERS</a>
+                <a href="http://gokulrajjayakumar.uta.cloud/Jayakumar_portfolio/works.php">WORKS</a>
+                <a href="Contact.html">CONTACT FORM</a>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>

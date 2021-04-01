@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SignUp.html</title>
+    <link rel="stylesheet" type="text/css" href="Style/login.css">
+</head>
+<body id="home">
+    <header>
+        <nav>
+            <h1>GOKULRAJ JAYAKUMAR</h1>
+            <div class="topnav-right">
+               <a href="HomePage.html" class="active">HOME</a>
+                <a href="http://gokulrajjayakumar.uta.cloud/Jayakumar_portfolio/Skill.php">MY SKILLS</a>
+                <a href="recommendation.html">RECOMMENDATION</a>
+                <a href="http://gokulrajjayakumar.uta.cloud/Jayakumar_portfolio/works.php">WORKS</a>
+                <a href="http://gokulrajjayakumar.uta.cloud/GokuBlog/">BLOG</a>
+                <a href="http://gokulrajjayakumar.uta.cloud/Jayakumar_portfolio/hireme.php">HIRE ME</a>
+                <a href="SignUp.html">SIGN UP</a>
+            </div>
+        </nav>
+    </header>
+    <br><br><br><br><br><br><br>
+    <h2 style="text-align:center;">KINDLY SIGNUP FOR FURTHER PROCEEDING</h2>
+
+    <button class="button-login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SIGN UP</button>
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="http://gokulrajjayakumar.uta.cloud/Jayakumar_portfolio/signup.php" method="post" >
+
+            <div class="container" style="text-align:left;">
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Enter Name" name="fname" required>
+                <label for="lname"><b>Last name</b></label>
+                <input type="text" placeholder="Enter Last name" name="lname" required>
+                <label for="email"><b>E-Mail</b></label>
+                <input type="text" placeholder="Enter E Mail" name="email" required>
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="pass1" onkeyup="checkPass(); return false;" required>
+                <label for="rpsw"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat password" name="rpsw" id="pass2" onkeyup="checkPass(); return false;" required>
+				<div id="error-nwl"></div>
+                <button type="submit" name="save" onclick="javascript:alert('Successfully signed up !')">Sign Up</button>
+               
+            </div>
+
+        
+        </form>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+		
+		function checkPass()
+{
+    var pass1 = document.getElementById('pass1');
+    var pass2 = document.getElementById('pass2');
+    var message = document.getElementById('error-nwl');
+    var goodColor = "#66cc66";
+    var badColor = "#ff6666";
+ 	
+    if(pass1.value.length > 5)
+    {
+        pass1.style.backgroundColor = goodColor;
+        message.style.color = goodColor;
+        message.innerHTML = "character number ok!"
+    }
+    else
+    {
+        pass1.style.backgroundColor = badColor;
+        message.style.color = badColor;
+        message.innerHTML = " you have to enter at least 6 digit!"
+        return;
+    }
+  
+    if(pass1.value == pass2.value)
+    {
+        pass2.style.backgroundColor = goodColor;
+        message.style.color = goodColor;
+        message.innerHTML = "ok!"
+    }
+	else
+    {
+        pass2.style.backgroundColor = badColor;
+        message.style.color = badColor;
+        message.innerHTML = " These passwords don't match"
+    }
+}  
+    </script>
+
+    <br><BR><BR><br><BR><BR><br><BR><BR><br><BR><BR><br><BR><BR><br><BR><BR><br><BR><BR><BR><br><BR><BR><br><BR><br><BR><BR><br><BR>
+
+    <footer>
+        <nav>
+
+         <div class="topnav-right">
+                <a href="HomePage.html" class="active">HOME</a>
+                <a href="http://gokulrajjayakumar.uta.cloud/Jayakumar_portfolio/Skill.php">MY SKILLS</a>
+                <a href="recommendation.html">RECOMMENDATION</a>
+                <a href="customers.html">CUSTOMERS</a>
+                <a href="http://gokulrajjayakumar.uta.cloud/Jayakumar_portfolio/works.php">WORKS</a>
+                <a href="Contact.html">CONTACT FORM</a>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>

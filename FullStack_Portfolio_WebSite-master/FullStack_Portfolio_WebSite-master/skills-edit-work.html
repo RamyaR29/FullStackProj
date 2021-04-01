@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EDITING THE WORKS</title>
+	<link rel="stylesheet" type="text/css" href="Style/login.css">
+</head>
+<body id="home">
+    <header>
+        <nav>
+            <h1>GOKULRAJ JAYAKUMAR</h1>
+            <div class="topnav-right">
+               <a href="HomePage.html" class="active">HOME</a>
+                <a href="http://gokulrajjayakumar.uta.cloud/Jayakumar_portfolio/Skill1.php">MY SKILLS</a>
+                <a href="recommendation.html">RECOMMENDATION</a>
+                <a href="http://gokulrajjayakumar.uta.cloud/Jayakumar_portfolio/works1.php">WORKS</a>
+                <a href="http://gokulrajjayakumar.uta.cloud/GokuBlog/">BLOG</a>
+                <a href="http://gokulrajjayakumar.uta.cloud/Jayakumar_portfolio/hireme1.php">HIRE ME</a>
+                <a href="SignUp.html">SIGN UP</a>
+            </div>
+        </nav>
+    </header>
+<br><br><br><br><br><br><br>
+<h2 style="text-align:center;">AS AN ADMIN, WHAT DO YOU PREFER TO DO?</h2>
+
+<button class="button-login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >MODIFY</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="http://gokulrajjayakumar.uta.cloud/Jayakumar_portfolio/skills-modify-work.php" method="post">
+    
+    <div class="container" style="text-align:left;">
+      <b>work id</b>
+      <input type="number" placeholder="Enter the id present at the beginning of each qualification" name="wid" required><br/>
+
+      <b>Work month</b>
+      <input type="text" name="wmonth" ><br/>
+	  
+	  <b>Work year</b>
+      <input type="t" name="wyear" ><br/>
+	  
+	  <b>Company name</b>
+      <input type="text" name="wcomp" ><br/>
+       
+		<b>Work Title</b>
+      <input type="text" name="wtitle" ><br/>
+	  
+	 <b>Work Description</b>
+      <input type="text" name="wdesc" ><br/>
+        
+        
+      <button type="submit" name="save" onclick="javascript:alert('Successfully modified  !')">MODIFY</button>
+     
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<button class="button-login" onclick="document.getElementById('id03').style.display='block'" style="width:auto;" >INSERT</button>
+
+<div id="id03" class="modal">
+  
+  <form class="modal-content animate" action="http://gokulrajjayakumar.uta.cloud/Jayakumar_portfolio/skills-insert-work.php" method="post">
+    
+    <div class="container" style="text-align:left;">
+       
+	   <b>work id</b>
+      <input type="number" placeholder="Enter the id present at the beginning of each qualification" name="wid" required><br/>
+
+      <b>Work month</b>
+      <input type="text" name="wmonth" required><br/>
+	  
+	  <b>Work year</b>
+      <input type="t" name="wyear" required><br/>
+	  
+	  <b>Company name</b>
+      <input type="text" name="wcomp" required><br/>
+       
+		<b>Work Title</b>
+      <input type="text" name="wtitle" required><br/>
+	  
+	 <b>Work Description</b>
+      <input type="text" name="wdesc" required><br/>
+        
+        
+      <button type="submit" name="save" onclick="javascript:alert('Successfully inserted !')">INSERT</button>
+     
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id03');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<button class="button-login" onclick="document.getElementById('id02').style.display='block'" style="width:auto;" >DELETE</button>
+
+<div id="id02" class="modal">
+  
+  <form class="modal-content animate" action="http://gokulrajjayakumar.uta.cloud/Jayakumar_portfolio/skills-delete-work.php" method="post">
+    
+    <div class="container" style="text-align:left;">
+      <b>Work id</b>
+      <input type="number"  name="wid" required><br/>
+
+      
+        
+      <button type="submit" name="save" onclick="javascript:alert('Successfully deleted!')">DELETE</button>
+     
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+    <br><BR><BR><br><BR><BR><br><BR><BR><br><BR><BR><br><BR><BR><br><BR><BR><br><BR><BR><BR><br><BR><BR><br><BR><br><BR><BR><br><BR>
+
+    <footer><nav>
+
+                  <div class="topnav-right">
+                <a href="HomePage.html" class="active">HOME</a>
+                <a href="http://gokulrajjayakumar.uta.cloud/Jayakumar_portfolio/Skill1.php">MY SKILLS</a>
+                <a href="recommendation.html">RECOMMENDATION</a>
+                <a href="customers.html">CUSTOMERS</a>
+                <a href="http://gokulrajjayakumar.uta.cloud/Jayakumar_portfolio/works1.php">WORKS</a>
+                <a href="Contact.html">CONTACT FORM</a>
+            </div>
+</nav></footer>
+</body>
+</html>
